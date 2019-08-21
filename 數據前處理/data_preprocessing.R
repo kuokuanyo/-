@@ -21,5 +21,9 @@ set.seed(123)
 split = sample.split(dataset$Purchased, SplitRatio = 0.8) #True為訓練集，False為測試集
 training_set = subset(dataset, split == TRUE) #8筆
 testing_set = subset(dataset, split == FALSE) #2筆
-print(training_set)
-print(testing_set)
+
+#特徵縮放
+#scale()必須都是數值
+#只對年齡和薪水執行特徵縮放
+training_set[, 2:3] = scale(training_set[, 2:3])
+testing_set[, 2:3] = scale(testing_set[, 2:3])
