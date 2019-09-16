@@ -17,7 +17,6 @@ imputer = imputer.fit(x[:, 1:3]) #小寫開頭為function
 x[:, 1:3] = imputer.transform(x[:, 1:3]) #執行function
 
 #分類資料
-#分類資料
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder #大寫為class
 labelencoder_x = LabelEncoder() #建立物件
 #直接使用fit_transform()執行訓練及轉換
