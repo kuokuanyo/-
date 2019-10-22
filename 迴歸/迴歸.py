@@ -45,16 +45,3 @@ plt.xlabel('Years of Experience')
 plt.ylabel('Salary')
 #畫出plt.show()
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-

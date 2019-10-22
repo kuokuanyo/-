@@ -50,15 +50,3 @@ plt.xlabel('Ads')
 plt.ylabel('Number of times each ad was selected')
 plt.legend()
 plt.show()
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
